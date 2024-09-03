@@ -7,3 +7,44 @@
     background: linear-gradient(to right, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
   }
 }
+/* Example of responsive styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 3em;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .search-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-bar .select-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .search-bar .search-button {
+    width: auto;
+    margin-left: auto;
+  }
+}
+
